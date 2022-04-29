@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/softwareeng.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script language="JavaScript" type="text/javascript" src="js/main.js"></script>
+
+    <link rel="icon" href="./images/main_images/logo.png">
+    <title>Mahum Hashmi - Software Engineering</title>
+
+    <!-- NAV BAR START-->
+    <div id="navigationBar" class="navbar">
+      <div class="tabs">
+        <img src="./images/main_images/logo.png" style="height: 30px; width: 19px; top: 7px; margin-right: 10px;">
+        <a class="a" href="index.html#about">About</a>
+        <a class="a" href="index.html#games">Game Development</a>
+        <a class="a" href="index.html#modelling">3D Modelling</a>
+        <a class="a" href="index.html#animation">Animation</a>
+        <div class="dropdown">
+          <a class="a" href="softwareeng.html">Software Engineering</a>
+          <div class="dropdown-container">
+            <a class="dropdown-more" href="#webdev" style="margin-top: 10px;">Website Development</a>
+            <a class="dropdown-more" href="#ios" style="margin-top: 10px;">iOS Mobile App</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a class="a" href="more.html">More</a>
+          <div class="dropdown-container">
+            <a class="dropdown-more" href="more.html" target="_blank" style="position: relative; margin-top: 10px; left: -5px;">Music</a>
+          </div>
+        </div>
+        <a class="a" href="cv.html">CV</a>
+      </div>
+    </div>
+    <!-- NAV BAR END -->
+
+    <!-- SIDE NAVBAR -->
+    <div id="sidenavbar" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <img src="./images/main_images/logo.png" style="height: 50px; width: 31px;">
+      <!-- About -->
+      <a href="index.html#about">About</a>
+      <div style="height: 1px; width: 79%; margin-left: 25px; background-color: white"></div>
+      <!-- Game Dev -->
+      <a href="index.html#games">Game Development</a>
+      <div style="height: 1px; width: 79%; margin-left: 25px; background-color: white"></div>
+      <!-- 3D Modelling -->
+      <a href="index.html#modelling">3D Modelling</a>
+      <div style="height: 1px; width: 79%; margin-left: 25px; background-color: white"></div>
+      <!-- Animation -->
+      <a href="index.html#animation">Animation</a>
+      <div style="height: 1px; width: 79%; margin-left: 25px; background-color: white"></div>
+      <!-- Software Engineering -->
+      <a href="softwareeng.html" style="display: inline-block;">Software Engineering</a>
+      <span>
+        <button id="sidenav-softeng-btn-open" class="arrow-down" onclick="openSidenavDrop('sidenav-softeng-container', 'sidenav-softeng-btn-open', 'sidenav-softeng-btn-close')"></button>
+        <button id="sidenav-softeng-btn-close" class="arrow-up" onclick="closeSidenavDrop('sidenav-softeng-container', 'sidenav-softeng-btn-open', 'sidenav-softeng-btn-close')"></button>
+      </span>
+      <div id="sidenav-softeng-container" class="sidenav-dropdown-container">
+        <a class="sidenav-dropdown-content" href="#webdev" style="font-size: 30px;">Website Development</a>
+        <a class="sidenav-dropdown-content" href="#ios" style="font-size: 30px;">iOS Mobile App</a>
+      </div>
+      <div style="height: 1px; width: 79%; margin-left: 25px; background-color: white"></div>
+      <!-- More -->
+      <a href="more.html" style="display: inline-block;">More</a>
+      <span>
+        <button id="sidenav-more-btn-open" class="arrow-down" onclick="openSidenavDrop('sidenav-more-container', 'sidenav-more-btn-open', 'sidenav-more-btn-close')"></button>
+        <button id="sidenav-more-btn-close" class="arrow-up" onclick="closeSidenavDrop('sidenav-more-container', 'sidenav-more-btn-open', 'sidenav-more-btn-close')"></button>
+      </span>
+      <div id="sidenav-more-container" class="sidenav-dropdown-container">
+        <a class="sidenav-dropdown-content" href="more.html#music" style="font-size: 30px;">Music</a>
+      </div>
+      <div style="height: 1px; width: 79%; margin-left: 25px; background-color: white"></div>
+      <!-- CV -->
+      <a href="cv.html">CV</a>
+      <div style="height: 1px; width: 79%; margin-left: 25px; background-color: white"></div>
+    </div>
+    <div class="openSidenav" style="display: none; position: relative; float: right; right: 70px; padding-top: 20px; font-size: 50px; color: #dbafc1; cursor: pointer;" onclick="openNav()">&#9776;</div>
+    <script>
+      window.addEventListener("resize", resizeNavbar);
+      window.onload = adjustOnload();
+    </script>
+    <!-- END OF SIDE NAVBAR -->
+  </head>
+  <body>
+    <div class="heading-container">
+      <h1>SOFTWARE ENGINEERING</h1>
+    </div>
+    <div class="contact-container">
+      <a href="https://github.com/Mahum13" target="_blank"><img src="./images/contact-icons/github.png"></a>
+    </div>
+    <!-- WEBSITE DEVELOPMENT -->
+    <div id="webdev" class="heading-container" style="margin-top: 40px; text-align: left; padding-left: 125px;">
+      <h1 style="font-size: 30px;">WEBSITE DEVELOPMENT</h1>
+    </div>
+    <div class="grid-container">
+      <div class="row">
+        <div class="column">
+          <div class="rectDiv">
+            <img src="./images/more_images/mahi.png">
+            <h2><a href="https://mahi.org.pk/">www.mahi.org.pk</a></h2>
+            <div style="background-color: rgba(191, 191, 191, 0.3); height: 1px; width: 100%;"></div>
+            <p>A website for a non-profit organisation based in Pakistan named "MAHI" (Maritime Archaeology and Heritage Institute of Pakistan).</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="rectDiv">
+            <img src="./images/more_images/dcc.png">
+            <h2><a href="http://dynamiccommunications.com.au/">www.dynamiccommunications.com.au</a></h2>
+            <div style="background-color: rgba(191, 191, 191, 0.3); height: 1px; width: 100%;"></div>
+            <p>A website for an Australasian NLP coaching and training company named Dynamic Communications - with a built in registration system.</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="rectDiv">
+            <img src="./images/more_images/search.png">
+            <h2><a href="https://searchpk.org.pk/">www.searchpk.org.pk</a></h2>
+            <div style="background-color: rgba(191, 191, 191, 0.3); height: 1px; width: 100%;"></div>
+            <p>A website for a philanthropic organisation based in Pakistan named "SEARCH" (Southeast Asian Research and Education in Critical Care Health).</p>
+          </div>
+        </div>
+      </div>
+      <div style="width: 100%; height: 3px; display: inline-block; position: relative;  text-align: center; background-color: rgba(191, 191, 191, 0.6); border-radius: 3px;"></div>
+    </div>
+    <!-- iOS Mobile App -->
+    <div id="ios" class="heading-container" style="top: 0px; text-align: left; padding-left: 125px;">
+      <h1 style="font-size: 30px;">iOS Mobile App</h1>
+    </div>
+    <div class="container">
+      <img src="./images/softwareeng_images/ios01.png" style="margin-right: 40px;">
+      <div class="text-div">
+        <p style="font-size: 18px; text-align: left;">During my time at King’s College London, for my undergraduate dissertation, I made an iOS Mobile Application called <i>ArtSense</i> which converts coloured images to sound. The motivation
+          behind this project was to offer visually-impaired users a new way to critique art.
+          <br style="line-height: 20px;">
+          <br>
+          The main functionality of this application is that the user is able to take a picture, in which each pixel represents a certain colour. The pixel colour data is then collected, and following Sir Isaac Newton’s colour
+          wheel theory of linking colours to musical notes, a frequency is assigned to each pixel. The user is then able to touch different parts of their image and hear the corresponding frequency. This allows them to experience a visual
+          piece as sound, much like braille allows them to ‘see’ through touch.
+        </p>
+      </div>
+    </div>
+    <div class="container" style="margin-top: 40px;">
+      <img src="./images/softwareeng_images/ios02.png" style="float: right; margin-left: 40px; ">
+      <div class="text-div">
+        <p style="font-size: 18px; text-align: left">For example, a visually-impaired user goes to an art gallery and takes a photo of a painting with varying shades and tones. Once their photo is process, as they move their finder over the image, they hear different frequencies.
+          Darker shades have a relatively lower frequency, whereas lighter and brighter shades have a higher frequency.
+          <br style="line-height: 20px">
+          <br>
+          Newton’s original colour wheel from 1704 correlated musical notes with colour, beginning with red and dividing the wheel to represent the octave of D. Over the years, researchers extended this colour wheel by applying the laws of mathematics
+          and music theory. The colour wheel I used for my project was developed by <a href="https://www.semanticscholar.org/paper/Music-and-color%3A-Relations-in-the-psychophysical-Pridmore/47000e961fe2de0b3779fe1b327f71c51cf075c4#paper-header" style="color: #dbafc1; text-decoration: none;" target="_blank">R. W. Pridmore</a>.
+        </p>
+      </div>
+    </div>
+    <div class="container" style="margin-top: 40px;">
+      <img src="./images/softwareeng_images/ios03.png" style="margin-right: 40px;">
+      <div class="text-div">
+        <p style="font-size: 18px; text-align: left">Once the image is processed and displayed back to the user for tactile interaction, the user has the option of five different oscillators which changes the audio output. This varies the frequency and amplitude to create different
+          sounds that are, by convention, named Sine, Triangle, Sawtooth, Square and White Noise. The frequency is according to the frequency assigned to the pixel of the image that is being tapped, which is assigned by the program following the colour wheel values.
+          <br style="line-height: 20px;">
+          <br>
+          In a more complete version of this prototype, the different oscillators would ideally be different musical instruments to make the audio more appealing than the current single tone output.
+          <br style="line-height: 20px;">
+          <br>
+          Software: Developed on XCode in Swift
+        </p>
+      </div>
+    </div>
+    <div class="container" style="margin-top: 60px;">
+      <div class="sub-container" style="margin-right: 150px; margin-bottom: 40px;">
+        <h1 style="font-size: 25px">Demonstration</h1>
+        <iframe title="vimeo-player" src="https://player.vimeo.com/video/704099192?h=4cb5f02737" width="450" height="252" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <!-- <div class="sub-container" style="margin-left: 80px;  width: 450px; height: 252px;"> -->
+      <h1 style="font-size: 25px;">Dissertation</h1>
+      <a href="./images/softwareeng_images/ArtSense_Report.pdf" download target="_blank"><img src="./images/softwareeng_images/artsense.png" style="height: 250px; width: auto;"></a>
+      <!-- </div> -->
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/more.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script language="JavaScript" type="text/javascript" src="js/main.js"></script>
+
+    <link rel="icon" href="./images/main_images/logo.png">
+    <title>Mahum Hashmi - More</title>
+
+    <!-- NAV BAR START-->
+    <div id="navigationBar" class="navbar">
+      <div class="tabs">
+        <img src="./images/main_images/logo.png" style="height: 30px; width: 19px; top: 7px; margin-right: 10px;">
+        <a class="a" href="index.html#about">About</a>
+        <a class="a" href="index.html#games">Game Development</a>
+        <a class="a" href="index.html#modelling">3D Modelling</a>
+        <a class="a" href="index.html#animation">Animation</a>
+        <div class="dropdown">
+          <a class="a" href="softwareeng.html">Software Engineering</a>
+          <div class="dropdown-container">
+            <a class="dropdown-more" href="softwareeng.html#webdev" target="_blank" style="margin-top: 10px;">Website Development</a>
+            <a class="dropdown-more" href="softwareeng.html#ios" target="_blank" style="margin-top: 10px;">iOS Mobile App</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a class="a" href="more.html">More</a>
+          <div class="dropdown-container">
+            <a class="dropdown-more" href="#music"  style="margin-top: 10px; left: -5px;">Music</a>
+          </div>
+        </div>
+        <a class="a" href="cv.html">CV</a>
+      </div>
+    </div>
+    <!-- NAV BAR END -->
+
+    <!-- SIDE NAVBAR -->
+    <div id="sidenavbar" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <img src="./images/main_images/logo.png" style="height: 50px; width: 31px;">
+      <!-- About -->
+      <a href="#about">About</a>
+      <div style="height: 1px; width: 79%; margin-left: 25px; background-color: white"></div>
+      <!-- Game Dev -->
+      <a href="index.html#games">Game Development</a>
+      <div style="height: 1px; width: 79%; margin-left: 25px; background-color: white"></div>
+      <!-- 3D Modelling -->
+      <a href="index.html#modelling">3D Modelling</a>
+      <div style="height: 1px; width: 79%; margin-left: 25px; background-color: white"></div>
+      <!-- Animation -->
+      <a href="index.html#animation">Animation</a>
+      <div style="height: 1px; width: 79%; margin-left: 25px; background-color: white"></div>
+      <!-- Software Engineering -->
+      <a href="softwareeng.html" style="display: inline-block;">Software Engineering</a>
+      <span>
+        <button id="sidenav-softeng-btn-open" class="arrow-down" onclick="openSidenavDrop('sidenav-softeng-container', 'sidenav-softeng-btn-open', 'sidenav-softeng-btn-close')"></button>
+        <button id="sidenav-softeng-btn-close" class="arrow-up" onclick="closeSidenavDrop('sidenav-softeng-container', 'sidenav-softeng-btn-open', 'sidenav-softeng-btn-close')"></button>
+      </span>
+      <div id="sidenav-softeng-container" class="sidenav-dropdown-container">
+        <a class="sidenav-dropdown-content" href="softwareeng.html#webdev" style="font-size: 30px;">Website Development</a>
+        <a class="sidenav-dropdown-content" href="softwareeng.html#ios" style="font-size: 30px;">iOS Mobile App</a>
+      </div>
+      <div style="height: 1px; width: 79%; margin-left: 25px; background-color: white"></div>
+      <!-- More -->
+      <a href="more.html" style="display: inline-block;">More</a>
+      <span>
+        <button id="sidenav-dropdown-btn-open" class="arrow-down" onclick="openSidenavDrop('sidenav-dropdown-container', 'sidenav-dropdown-btn-open', 'sidenav-dropdown-btn-close')"></button>
+        <button id="sidenav-dropdown-btn-close" class="arrow-up" onclick="closeSidenavDrop('sidenav-dropdown-container', 'sidenav-dropdown-btn-open', 'sidenav-dropdown-btn-close')"></button>
+      </span>
+      <div id="sidenav-dropdown-container" class="sidenav-dropdown-container">
+        <a class="sidenav-dropdown-content" href="#music" style="font-size: 30px;">Music</a>
+      </div>
+      <div style="height: 1px; width: 79%; margin-left: 25px; background-color: white"></div>
+      <!-- CV -->
+      <a href="cv.html">CV</a>
+      <div style="height: 1px; width: 79%; margin-left: 25px; background-color: white"></div>
+    </div>
+    <div class="openSidenav" style="display: none; position: relative; float: right; right: 70px; padding-top: 20px; font-size: 50px; color: #dbafc1; cursor: pointer;" onclick="openNav()">&#9776;</div>
+    <script>
+      window.addEventListener("resize", resizeNavbar);
+      window.onload = adjustOnload();
+    </script>
+    <!-- END OF SIDE NAVBAR -->
+  </head>
+  <body>
+    <!-- MUSIC -->
+    <div id="music" class="heading-container">
+      <h1>MUSIC</h1>
+    </div>
+    <div class="contact-container">
+      <a href="https://www.instagram.com/mahum.hashmi.13/" target="_blank"><img src="./images/contact-icons/instagram.png"></a>
+      <a href="https://www.youtube.com/channel/UC59gxnFutw88bBOx2eDoUSw" target="_blank"><img src="./images/contact-icons/youtube.png"></a>
+      <a href="https://www.facebook.com/profile.php?id=100063927031110" target="_blank"><img src="./images/contact-icons/facebook.png"></a>
+      <a href="https://sessionslive.com/Mahum13" target="_blank"><img src="./images/contact-icons/sessions.png" style="margin-right: 0"></a>
+
+    </div>
+    <div class="grid-container" style="margin-top: 260px;">
+      <p style="font-size: 21px;">I have been recording as a cover artist for the last 10 years, and began uploading my work on social media at the age of 14. Working with softwares like GarageBand, I began understanding
+        the process of audio recording at a young age. At first I used to play each instrument myself and layer it on GarageBand, but soon began experimenting with electronic music production.
+        <br>
+        With an interest in videography, I started making music videos for my covers. I mainly worked with editing softwares like iMovie and Adobe Premiere Pro, and worked on my editing and colour grading skills.
+        <br>
+        Since February 2021, I have been doing livestreams and have been participating in festivals on the global platform <i>Sessions Live by Pandora</i> as well.
+      </p>
+    </div>
+    <div class="grid-container" style="margin-top: 20px;">
+      <div class="row">
+        <div class="column" style="width: 100%; height: 400;">
+          <div class="rectDiv">
+            <iframe width="712" height="400" src="https://www.youtube.com/embed/SJIqKrzmWkU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column" style="width: 50%; margin-top: 40px;">
+          <div class="rectDiv">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/85bkvwkM_7U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="column" style="width: 50%; margin-top: 40px;">
+          <div class="rectDiv">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/oZIkhWHqLCs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <div class="footer-contact">
+      <!-- <p style="bottom: 6px;">MAHUM HASHMI</p> -->
+      <a href="mailto: mahumhashmi@gmail.com"><img src="./images/contact-icons/mail.png"></a>
+      <a href="https://www.linkedin.com/in/mahum-hashmi/" target="_blank"><img src="./images/contact-icons/linkedin.png"></a>
+      <a href="https://github.com/Mahum13" target="_blank"><img src="./images/contact-icons/github.png"></a>
+    </div>
+  </footer>
+</html>

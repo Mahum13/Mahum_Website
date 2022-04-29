@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script language="JavaScript" type="text/javascript" src="js/main.js"></script>
+
+    <link rel="icon" href="./images/main_images/logo.png">
+    <title>Mahum Hashmi</title>
+
+    <!-- NAV BAR START-->
+    <div id="navigationBar" class="navbar">
+      <div class="tabs">
+        <img src="./images/main_images/logo.png" style="height: 30px; width: 19px; top: 7px; margin-right: 10px;">
+        <a class="a" href="#about">About</a>
+        <a class="a" href="#games">Game Development</a>
+        <a class="a" href="#modelling">3D Modelling</a>
+        <a class="a" href="#animation">Animation</a>
+        <div class="dropdown">
+          <a class="a" href="softwareeng.html">Software Engineering</a>
+          <div class="dropdown-container">
+            <a class="dropdown-more" href="softwareeng.html#webdev" target="_blank" style="margin-top: 10px;">Website Development</a>
+            <a class="dropdown-more" href="softwareeng.html#ios" target="_blank" style="margin-top: 10px;">iOS Mobile App</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a class="a" href="more.html">More</a>
+          <div class="dropdown-container">
+            <a class="dropdown-more" href="more.html" target="_blank" style="position: relative; margin-top: 10px; left: -5px;">Music</a>
+          </div>
+        </div>
+        <a class="a" href="cv.html">CV</a>
+      </div>
+    </div>
+    <!-- NAV BAR END -->
+
+    <!-- SIDE NAVBAR -->
+    <div id="sidenavbar" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <img src="./images/main_images/logo.png" style="height: 50px; width: 31px;">
+      <!-- About -->
+      <a href="#about">About</a>
+      <div style="height: 1px; width: 79%; margin-left: 25px; background-color: white"></div>
+      <!-- Game Dev -->
+      <a href="#games">Game Development</a>
+      <div style="height: 1px; width: 79%; margin-left: 25px; background-color: white"></div>
+      <!-- 3D Modelling -->
+      <a href="#modelling">3D Modelling</a>
+      <div style="height: 1px; width: 79%; margin-left: 25px; background-color: white"></div>
+      <!-- Animation -->
+      <a href="#animation">Animation</a>
+      <div style="height: 1px; width: 79%; margin-left: 25px; background-color: white"></div>
+      <!-- Software Engineering -->
+      <a href="softwareeng.html" style="display: inline-block;">Software Engineering</a>
+      <span>
+        <button id="sidenav-softeng-btn-open" class="arrow-down" onclick="openSidenavDrop('sidenav-softeng-container', 'sidenav-softeng-btn-open', 'sidenav-softeng-btn-close')"></button>
+        <button id="sidenav-softeng-btn-close" class="arrow-up" onclick="closeSidenavDrop('sidenav-softeng-container', 'sidenav-softeng-btn-open', 'sidenav-softeng-btn-close')"></button>
+      </span>
+      <div id="sidenav-softeng-container" class="sidenav-dropdown-container">
+        <a class="sidenav-dropdown-content" href="softwareeng.html#webdev" style="font-size: 30px;">Website Development</a>
+        <a class="sidenav-dropdown-content" href="softwareeng.html#ios" style="font-size: 30px;">iOS Mobile App</a>
+      </div>
+      <div style="height: 1px; width: 79%; margin-left: 25px; background-color: white"></div>
+      <!-- More -->
+      <a href="more.html" style="display: inline-block;">More</a>
+      <span>
+        <button id="sidenav-more-btn-open" class="arrow-down" onclick="openSidenavDrop('sidenav-more-container', 'sidenav-more-btn-open', 'sidenav-more-btn-close')"></button>
+        <button id="sidenav-more-btn-close" class="arrow-up" onclick="closeSidenavDrop('sidenav-more-container', 'sidenav-more-btn-open', 'sidenav-more-btn-close')"></button>
+      </span>
+      <div id="sidenav-more-container" class="sidenav-dropdown-container">
+        <a class="sidenav-dropdown-content" href="more.html#music" style="font-size: 30px;">Music</a>
+      </div>
+      <div style="height: 1px; width: 79%; margin-left: 25px; background-color: white"></div>
+      <!-- CV -->
+      <a href="cv.html">CV</a>
+      <div style="height: 1px; width: 79%; margin-left: 25px; background-color: white"></div>
+    </div>
+    <div class="openSidenav" style="display: none; position: relative; float: right; right: 70px; padding-top: 20px; font-size: 50px; color: #dbafc1; cursor: pointer;" onclick="openNav()">&#9776;</div>
+    <script>
+      window.addEventListener("resize", resizeNavbar);
+      window.onload = adjustOnload();
+    </script>
+    <!-- END OF SIDE NAVBAR -->
+  </head>
+
+  <body>
+    <!-- ABOUT -->
+    <div class="container" style="width: 100%;">
+      <div id="about" class="heading">
+        <a class="name" href="./index.html"><span class="underline">MAHUM HASHMI</span></a>
+      </div>
+      <div class="about">
+        Hi! My name is Mahum Hashmi and I am currently a postgraduate student at Goldsmiths, University of London doing an MA in Computer Games, Art and Design. I hold a Bachelor of Science degree from King's College London in Computer Science.
+        <br style="line-height: 20px">
+        <br>
+        This website is a portfolio of work I have done in game development, 3D modelling and animation, along with various software engineering projects. There is also a section showcasing projects I have done in music production and music videos, as a cover artist.
+      </div>
+      <div class="contact">
+        <a href="mailto: mahumhashmi@gmail.com"><img src="./images/contact-icons/mail.png"></a>
+        <a href="https://www.linkedin.com/in/mahum-hashmi/" target="_blank"><img src="./images/contact-icons/linkedin.png"></a>
+        <a href="https://github.com/Mahum13" target="_blank"><img src="./images/contact-icons/github.png"></a>
+      </div>
+    </div>
+    <!-- END ABOUT -->
+    <!-- background-image: linear-gradient(#0E0F09, #5F6610) -->
+    <!-- GAME DEVELOPMENT -->
+    <div id="games" class="container" style="background-image: linear-gradient(#0E0F09, #1D1F0E); padding-left: 90px; padding-right: 90px;">
+      <div class="heading" style="margin-top: 70px; padding-left: 0;">
+        <div class="name">GAME DEVELOPMENT</div>
+      </div>
+      <!-- ITEM 1 -->
+      <div class="item-container">
+        <h1><i>"The Shining Experience"</i> - Virtual Reality</h1>
+        <div class="video">
+          <iframe title="vimeo-player" src="https://player.vimeo.com/video/687184062?h=007bd20fb1" width="426" height="240" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="item-text">
+          <p>
+            This project was inspired by Stanley Kubrick's 1980 film "The Shining" which is based on the novel by Stephen King. This is a Virtual Reality experience where the player is immersed into the Overlook Hotel and can explore the various rooms.
+            <br style="line-height: 20px">
+            <br>
+            Lighting and sound were the focus of this project, to use them as a means to create an immersive horror experience. Triggering sound and lighting effects along with animations to help guide the player's exploration was a particular focus as well.
+            <br style="line-height: 20px;">
+            <br>
+            Software: Unity (VR Toolkit; C#); Demo on the Oculus Rift headset
+          </p>
+        </div>
+      </div>
+      <div style="width: 100%; height: 3px; display: inline-block; position: relative;  text-align: center; background-color: rgba(191, 191, 191, 0.6); border-radius: 3px;"></div>
+      <!-- ITEM 2 -->
+      <div class="item-container">
+        <h1><i>"Shoot the Song"</i></h1>
+        <div class="video" style="float: right;">
+          <iframe title="vimeo-player" src="https://player.vimeo.com/video/702515749?h=28b3aee807" width="426" height="240" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="item-text">
+          <p>This is a first-person view musical game where the player has to hit the musical targets in the correct order to open the door.
+            <br>
+            When the level loads, an audio track is played - in this video it is "I'll Be There For You" by the Rembrandts. The player must then explore the environment to find 4 targets which each hold a different snippet of the original audio. These must be hit in the correct order in order to progress.
+            <br>
+            The player can then switch weapons in order to complete the same challenge, except this time the snippets are of a specific instrument in the original audio. For example in this video, it is the rhythm guitar component of the arrangement. In the middle of the environment, there is a blow horn which will be play what the second track should sound like as a hint.
+            <br>
+            Once both tracks are correctly sound, the door opens completely.
+            <br style="line-height: 20px;">
+            <br>
+            Software: Unreal Engine 4 (Blueprints)
+          </p>
+        </div>
+      </div>
+      <div style="width: 100%; height: 3px; display: inline-block; position: relative;  text-align: center; background-color: rgba(191, 191, 191, 0.6); border-radius: 3px;"></div>
+      <!-- ITEM 3 -->
+      <div class="item-container">
+        <h1><i>"Escape from Neverland"</i> - Parser Game</h1>
+        <div class="video" style="height: 620px; margin-right: 50px;">
+          <img class="vid-img" src="./images/main_images/neverland.jpg" onclick="openModal()"style="width: 100%;">
+          <div id="modal" class="modal">
+            <div class="modal-content">
+              <span class="close-btn"><button class="close-btn" onclick="closeModal()">&times;</button></span>
+              <img class="vidSlides" src="./images/main_images/neverland01.png" style="width: 100%;">
+              <img class="vidSlides" src="./images/main_images/neverland02.png" style="width: 100%;">
+              <img class="vidSlides" src="./images/main_images/neverland03.png" style="width: 100%;">
+              <button class="arrow btn-black" onclick="plusDivs(-1)">&#10094;</button>
+              <button class="arrow btn-black" onclick="plusDivs(1)">&#10095;</button>
+            </div>
+          </div>
+        </div>
+        <script>
+          var slideIndex = 1;
+          showDivs(slideIndex);
+        </script>
+        <div class="item-text">
+          <p><i>Escape from Neverland</i> is a parser game based on the book "Peter Pan" by J.M Barrie (also the popular 1953 animated Disney movie). Set in the fictional world of Neverland, the player plays as Wendy with the objective of flying home. However, to do so, you must get Tinkerbell's magical fairy dust.
+             This takes the player on adventures all over the island, fighting pirates, mermaids and meeting friends on the way.
+            <br>
+            As you move around the environment, you can pick up different items and add them to your satchel, however there is a limit to how much you can carry. You must fight pirates to protect yourself and your friends, and fight mermaids to fulfil Tinkerbell's demands.
+            <br>
+            There is also a 'transportation' space, where once you enter you are transported to a random setting on the island, and face different challenges.
+            <br style="line-height: 20px;">
+            <br>
+            Language: Java
+          </p>
+        </div>
+      </div>
+      <div style="width: 100%; height: 3px; display: inline-block; position: relative;  text-align: center; background-color: rgba(191, 191, 191, 0.6); border-radius: 3px;"></div>
+      <!-- ITEM 4 -->
+      <div class="item-container">
+        <h1><i>"Finding Memory"</i></h1>
+        <div class="video" style="float: right;">
+          <iframe title="vimeo-player" src="https://player.vimeo.com/video/666791509?h=f41eb60d0f" width="426" height="240" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="item-text">
+          <p>A first person view game, <i>Finding Memory</i> is essentially a 'finding things' game. You are shown three items in the beginning of the level, which are displayed for a short amount of time.
+            <br>
+            Once you enter the environment, which in this demo is a simple living room and kitchen area, you must find the items that were shown in the beginning.
+            <br style="line-height: 20px;">
+            <br>
+            Software: Unity (C#).
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- END GAME DEVELOPMENT -->
+
+    <!-- 3D MODELLING -->
+    <div id="modelling" class="container" style="background-image: linear-gradient(#0E0F09, #1D1612); padding-left: 90px; padding-right: 90px; width: 100%;">
+      <div class="heading" style="margin-top: 70px; padding-left: 0;">
+        <div class="name">3D MODELLING</div>
+      </div>
+      <div class="item-container">
+        <!-- Model 1 -->
+        <div class="row">
+          <div class="column">
+            <div class="rectDiv">
+              <img src="./images/main_images/modelling/bottle_watch01.jpg">
+            </div>
+          </div>
+          <div class="column">
+            <div class="rectDiv">
+              <img src="./images/main_images/modelling/bottle_watch02.jpg">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column" style="width: 100%;">
+            <div class="rectDiv">
+              <p>These models were my first attempt at 3D modelling. The assets are inspired by <i>Alice in Wonderland</i>, with the White Rabbit's pocket-watch and Alice's 'drink me' bottle.
+                <br style="line-height: 20px;">
+                <br>
+                Software: Maya</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Model 2 -->
+        <div class="row">
+          <div class="column">
+            <div class="rectDiv">
+              <img src="./images/main_images/modelling/jhoomka1.jpg">
+            </div>
+          </div>
+          <div class="column">
+            <div class="rectDiv">
+              <img src="./images/main_images/modelling/mutka.jpg">
+            </div>
+          </div>
+        </div>
+        <!-- <div class="row">
+          <div class="column" style="width: 100%;">
+            <div class="rectDiv">
+              <p>Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando un anonimo tipografo prese una cassetta di caratteri e li assemblò per preparare un testo campione. È sopravvissuto
+              non solo a più di cinque secoli, ma anche al passaggio alla videoimpaginazione, pervenendoci sostanzialmente inalterato. Fu reso popolare, negli anni ’60, con la diffusione dei fogli di caratteri trasferibili “Letraset”, che contenevano passaggi del Lorem Ipsum, e più recentemente da software di impaginazione come Aldus PageMaker, che includeva versioni del Lorem Ipsum.</p>
+            </div>
+          </div>
+        </div> -->
+
+        <!-- Model 3 -->
+        <div class="row">
+          <div class="column">
+            <div class="rectDiv">
+              <img src="./images/main_images/modelling/Rug.jpg">
+            </div>
+          </div>
+          <div class="column">
+            <div class="rectDiv">
+              <img src="./images/main_images/modelling/dhol.jpg">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column" style="width: 100%;">
+            <div class="rectDiv">
+              <p>The assets above are made to show different traditional Pakistani objects. All were created to have different uses in a game environment.
+                <br>
+                The first asset are a pair of <i>jhoomkas</i> which are traditional Pakistani earrings worn by Pakistani women not only on special occasions, but are also incorporated in their everyday lives. In a game, this asset is intended to be used as a reward or 'treasure' to be found.
+                <br>
+                The second asset is a <i>mutka</i> which is a clay pot. The texture on this asset is traditional Pakistani Truck Art, done by the painter Haider Ali. This style of painting is known as truck art because it is mostly found on big transport trucks all over the country and is a big part of Pakistani art and culture.
+                This asset would be used as a weapon or tool to break through walls or other hard surfaces in a game.
+                <br>
+                The third asset is a <i>janamaz</i> which is an Islamic prayer rug. When Muslims pray on this mat, no matter where they are in the world, they must point the rug in the direction of the Holy Ka'aba (House of God) located in Makkah, Saudi Arabia. Using this idea of direction, in a game environment this asset would be used as a navigation tool to guide the player.
+                <br>
+                The fourth asset is a <i>dhol</i> which is a large barrel shaped drum. A very popular instrument in Pakistani music, a dhol can be played with hands or sticks. In a game, a player would play the dhol to open a door.
+                <br style="line-height: 20px;">
+                <br>
+                Software: Maya
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END 3D MODELLING -->
+
+    <!-- ANIMATION -->
+    <div id="animation" class="container" style="width: 100%; padding-left: 90px; padding-right: 90px; background-image: linear-gradient(#0E0F09, #1D1F0E)">
+      <div class="heading" style="margin-top: 70px; padding-left: 0;">
+        <div class="name">ANIMATION</div>
+      </div>
+      <!-- ITEM 1 -->
+      <div class="item-container">
+        <h1>Player Swing Animation</h1>
+        <div class="video" style="margin-right: 50px;">
+          <video id="vid" controls>
+            <source src="./images/main_images/animation/SwingAnimation.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item-text">
+          <p>The 'swing' asset in this animation is inspired by traditional Pakistani swings. This asset was designed to be used as a 'launcher' in a game, launching the player onto a higher platform.
+            <br>
+            The player in this animation was rigged using the <i>Advanced Skeleton Tools</i> plugin installed from the Animation Studios' website: <a href="https://www.animationstudios.com.au/advanced-skeleton-download" style="text-decoration: underline; color: white;" target='_blank'>https://www.animationstudios.com.au/advanced-skeleton-download</a>.
+            <br>
+            The animation sequence was made on Maya and imported into Unity, where player inputs were used to trigger the animation.
+            <br style="line-height: 20px;">
+            <br>
+            Software: Maya, Unity(C#)
+          </p>
+        </div>
+      </div>
+      <div style="width: 100%; height: 3px; display: inline-block; position: relative;  text-align: center; background-color: rgba(191, 191, 191, 0.6); border-radius: 3px;"></div>
+
+      <!-- ITEM 2 -->
+      <div class="item-container">
+        <h1>Player Dhol Animation</h1>
+        <div class="video" style="float: right;">
+          <video id="vid" controls>
+            <source src="./images/main_images/animation/DholAnimation.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item-text">
+          <p>The barrel shaped drum in this animation is a Pakistani instrument known as a dhol, which the player plays on in order to open a door. The dhol was modelled in Maya, whereas the door was modelled in Unity.
+            <br>
+            The character animation was made in Maya and imported into Unity to be triggered by player inputs.
+            <br style="line-height: 20px;">
+            <br>
+            Software: Maya, Unity(C#)
+          </p>
+        </div>
+      </div>
+      <div style="width: 100%; height: 3px; display: inline-block; position: relative;  text-align: center; background-color: rgba(191, 191, 191, 0.6); border-radius: 3px;"></div>
+
+      <!-- ITEM 3 -->
+      <div class="item-container">
+        <h1>Tin Man Animation</h1>
+        <div class="video" style="margin-right: 50px;">
+          <video id="vid" controls>
+            <source src="./images/main_images/animation/TinMan_Animation.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item-text">
+          <p>This animation sequence was inspired by <i>The Wizard of Oz</i>, and was my first ever attempt at animation. The background image is a still from the 1939 movie.
+            <br>
+            The sequence is an attempt at a basic walk cycle and camera movement. The Tin Man was manually riggged using Maya's available joint tools - creating a joint network rooted at the spine. Foot and hand manipulators were used to help the animation process.
+            <br style="line-height: 20px;">
+            <br>
+            Software: Maya
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <div class="footer-contact">
+      <!-- <p style="bottom: 6px;">MAHUM HASHMI</p> -->
+      <a href="mailto: mahumhashmi@gmail.com"><img src="./images/contact-icons/mail.png"></a>
+      <a href="https://www.linkedin.com/in/mahum-hashmi/" target="_blank"><img src="./images/contact-icons/linkedin.png"></a>
+      <a href="https://github.com/Mahum13" target="_blank"><img src="./images/contact-icons/github.png"></a>
+    </div>
+  </footer>
+</html>

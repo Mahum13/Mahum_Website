@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/more.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script language="JavaScript" type="text/javascript" src="js/main.js"></script>
+
+    <link rel="icon" href="./images/main_images/logo.png">
+    <title>Mahum Hashmi</title>
+
+    <!-- NAV BAR START-->
+    <div id="navigationBar" class="navbar">
+      <div class="tabs">
+        <img src="./images/main_images/logo.png" style="height: 30px; width: 19px; top: 7px; margin-right: 10px;">
+        <a class="a" href="index.html#about">About</a>
+        <a class="a" href="index.html#games">Game Development</a>
+        <a class="a" href="index.html#modelling">3D Modelling</a>
+        <a class="a" href="index.html#animation">Animation</a>
+        <div class="dropdown">
+          <a class="a" href="softwareeng.html">Software Engineering</a>
+          <div class="dropdown-container">
+            <a class="dropdown-more" href="softwareeng.html#webdev" target="_blank" style="margin-top: 10px;">Website Development</a>
+            <a class="dropdown-more" href="softwareeng.html#ios" target="_blank" style="margin-top: 10px;">iOS Mobile App</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a class="a" href="more.html">More</a>
+          <div class="dropdown-container">
+            <a class="dropdown-more" href="more.html#music"  style="margin-top: 10px; left: -5px;">Music</a>
+          </div>
+        </div>
+        <a class="a" href="cv.html">CV</a>
+      </div>
+    </div>
+    <!-- NAV BAR END -->
+
+    <!-- SIDE NAVBAR -->
+    <div id="sidenavbar" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <img src="./images/main_images/logo.png" style="height: 50px; width: 31px;">
+      <!-- About -->
+      <a href="index.html#about">About</a>
+      <div style="height: 1px; width: 79%; margin-left: 25px; background-color: white"></div>
+      <!-- Game Dev -->
+      <a href="index.html#games">Game Development</a>
+      <div style="height: 1px; width: 79%; margin-left: 25px; background-color: white"></div>
+      <!-- 3D Modelling -->
+      <a href="index.html#modelling">3D Modelling</a>
+      <div style="height: 1px; width: 79%; margin-left: 25px; background-color: white"></div>
+      <!-- Animation -->
+      <a href="index.html#animation">Animation</a>
+      <div style="height: 1px; width: 79%; margin-left: 25px; background-color: white"></div>
+      <!-- Software Engineering -->
+      <a href="softwareeng.html" style="display: inline-block;">Software Engineering</a>
+      <span>
+        <button id="sidenav-softeng-btn-open" class="arrow-down" onclick="openSidenavDrop('sidenav-softeng-container', 'sidenav-softeng-btn-open', 'sidenav-softeng-btn-close')"></button>
+        <button id="sidenav-softeng-btn-close" class="arrow-up" onclick="closeSidenavDrop('sidenav-softeng-container', 'sidenav-softeng-btn-open', 'sidenav-softeng-btn-close')"></button>
+      </span>
+      <div id="sidenav-softeng-container" class="sidenav-dropdown-container">
+        <a class="sidenav-dropdown-content" href="softwareeng.html#webdev" style="font-size: 30px;">Website Development</a>
+        <a class="sidenav-dropdown-content" href="softwareeng.html#ios" style="font-size: 30px;">iOS Mobile App</a>
+      </div>
+      <div style="height: 1px; width: 79%; margin-left: 25px; background-color: white"></div>
+      <!-- More -->
+      <a href="more.html" style="display: inline-block;">More</a>
+      <span>
+        <button id="sidenav-dropdown-btn-open" class="arrow-down" onclick="openSidenavDrop('sidenav-dropdown-container', 'sidenav-dropdown-btn-open', 'sidenav-dropdown-btn-close')"></button>
+        <button id="sidenav-dropdown-btn-close" class="arrow-up" onclick="closeSidenavDrop('sidenav-dropdown-container', 'sidenav-dropdown-btn-open', 'sidenav-dropdown-btn-close')"></button>
+      </span>
+      <div id="sidenav-dropdown-container" class="sidenav-dropdown-container">
+        <a class="sidenav-dropdown-content" href="more.html#music" style="font-size: 30px;">Music</a>
+      </div>
+      <div style="height: 1px; width: 79%; margin-left: 25px; background-color: white"></div>
+      <!-- CV -->
+      <a href="cv.html">CV</a>
+      <div style="height: 1px; width: 79%; margin-left: 25px; background-color: white"></div>
+    </div>
+    <div class="openSidenav" style="display: none; position: relative; float: right; right: 70px; padding-top: 20px; font-size: 50px; color: #dbafc1; cursor: pointer;" onclick="openNav()">&#9776;</div>
+    <script>
+      window.addEventListener("resize", resizeNavbar);
+      window.onload = adjustOnload();
+    </script>
+    <!-- END OF SIDE NAVBAR -->
+  </head>
+  <body>
+    <div class="heading-container" style="height: 400px;margin-bottom: 300px;">
+      <h1><a href="./images/mahum-hashmi-cv.pdf" download target="_blank">Click to download CV</a></h1>
+    </div>
+  </body>
+</html>
